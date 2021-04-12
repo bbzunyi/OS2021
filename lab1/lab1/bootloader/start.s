@@ -58,7 +58,7 @@ start32:
 	movw %ax,%gs
 	movl $0x8000, %eax # setting esp
 	movl %eax, %esp
-     	jmp bootMain # jump to bootMain in boot.c
+    jmp bootMain # jump to bootMain in boot.c
 	pushl $13 # pushing the size to print into stack
 	pushl $message # pushing the address of message into stack
 	calll displayStr # calling the display function
